@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Platform } from 'react-native';
 import PropTypes from 'prop-types';
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 import defaultTheme from './Theme';
 
 const LabelWrapper = styled.View`

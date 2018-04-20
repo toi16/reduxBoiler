@@ -1,4 +1,4 @@
-export * from './src/ActionsContainer';
+export * from './src/ButtonGroup';
 export * from './src/Button';
 export * from './src/FieldsContainer';
 export * from './src/Fieldset';
@@ -8,4 +8,3 @@ export * from './src/Input';
 export * from './src/Label';
 export * from './src/Select';
 export * from './src/Switch';
-export * from './src/Theme';

@@ -6,6 +6,9 @@ const Theme = {
     fontWeight: 700,
     height: 45
   },
+  ButtonGroup: {
+
+  },
   ErrorMessage: {
     color: 'red',
     fontSize: 10,
@@ -55,4 +58,4 @@ const Theme = {
   }
 };
 
-export { Theme };
+export default Theme;

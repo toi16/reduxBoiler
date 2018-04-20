@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput, View } from 'react-native';
 import PropTypes from 'prop-types';
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 import defaultTheme from './Theme';
 
 /**
@@ -54,7 +54,7 @@ InputWrapper.defaultProps = {
 
 // Subtract the border of the form group to have a full height input
 const StyledInput = styled.TextInput`
-  flex: ${props => (props.inlineLabel ? 0.5 : 1)};
+  flex: ${props => (props.inlineLabel ? 1 : 1)};
   color: ${props => props.theme.Input.color};
   font-size: ${props => props.theme.BaseInput.fontSize};
   line-height: ${props => props.theme.BaseInput.lineHeight};

@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Picker from 'react-native-universal-picker';
 import PropTypes from 'prop-types';
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 import { default as BaseIcon } from 'react-native-vector-icons/Ionicons';
 import defaultTheme from './Theme';
 
@@ -17,7 +17,7 @@ const HaveNoIdeaWhyThisIsNeeded = 3;
 
 const SelectLabel = styled.Text`
   color: ${props => props.theme.Input.color};
-  font-size: ${props => props.theme.BaseInput.fontSize};
+  font-size: 12;
   flex:1;
 `;
 
@@ -88,15 +88,14 @@ class Select extends Component {
         onValueChange={this.onValueChange}
         selectedValue={value}
         style={{
-          color: value ? theme.Input.color : theme.BaseInput.placeholderColor,
+          color: value ? theme.Input.color : '#c9c9c9',
           height: theme.FormGroup.height,
           // Ugly workaround, can't find the reason for the padding
           marginLeft: Platform.OS === 'ios' ? 0 : -7,
         }}
         itemStyle={{
-          // color: value ? theme.Input.color : theme.BaseInput.placeholderColor,
           color: theme.Input.color,
-          fontSize: theme.BaseInput.fontSize,
+          fontSize: 12,
           paddingTop: 6,
         }}
         {...rest}

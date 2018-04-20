@@ -1,6 +1,5 @@
-import React from 'react';
 import { View } from 'react-native';
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 import defaultTheme from './Theme';
 
 const ButtonGroup = styled.View`

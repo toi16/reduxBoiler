@@ -1,5 +1,4 @@
-import React from 'react';
-import { Switch as BaseSwitch, View } from 'react-native';
+import { Switch as BaseSwitch } from 'react-native';
 import styled from 'styled-components';
 import defaultTheme from './Theme';
 

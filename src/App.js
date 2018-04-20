@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import Form from './components/Form';
+import SettingsForm from './components/SettingsForm';
 
 class App extends Component {
     render() {
         return (
             <Provider store={store}>
                 <View>
-                    <Form />
+                    <SettingsForm />
                 </View>
             </Provider>
         );
