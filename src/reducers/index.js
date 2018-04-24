@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
+import { SettingsReducer } from './SettingsReducer';
 
 export default combineReducers({
-    // other reducers here
-    form: formReducer
+    settings: () => []
+   
 });
